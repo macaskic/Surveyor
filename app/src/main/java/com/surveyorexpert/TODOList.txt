@@ -1,0 +1,9 @@
+TODO List
+
+Activity life cycle
+
+Photo location on android
+Computer\TegraNote-P1640\Internal storage\DCIM\Camera
+
+House keeping
+Memory managment

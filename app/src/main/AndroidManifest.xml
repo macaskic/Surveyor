@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.surveyorexpert"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+   <uses-permission android:name="android.permission.SET_WALLPAPER" /> 
+   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+   <uses-permission android:name="android.permission.INTERNET"/>
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/notes"
+        android:label="@string/app_name"
+        android:background="@drawable/city"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+        <activity
+            android:name="com.surveyorexpert.ExpandableListMain"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINx" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.surveyorexpert.Introduction"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.INTRODUCTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.surveyorexpert.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.surveyorexpert.CameraPhotoCapture"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERACAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+        <activity
+            android:name="com.surveyorexpert.Editor"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDITOR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+  
+        <activity
+            android:name="com.surveyorexpert.Email"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.EMAIL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>   
+        
+          <activity
+            android:name="com.surveyorexpert.Register"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.REGISTR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    
+        
+      <activity
+            android:name="com.surveyorexpert.ExplorerActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.EXPLORER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>     
+        
+        <activity
+            android:name="com.surveyorexpert.UploadImage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.UPLOADIMAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.surveyorexpert.DetailListView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.DETAILLISTVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    
+      
+        <activity
+            android:name="com.surveyorexpert.AdminIntroduction"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ADMININTRODUCTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>     
+            
+      <activity
+            android:name="com.surveyorexpert.TalkToMe"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.TALKTOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>     
+                    
+            
+    </application>
+
+</manifest>

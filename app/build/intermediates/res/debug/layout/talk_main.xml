@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/building" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <Button
+        android:id="@+id/bt_speak"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Please make your decription" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ems="15"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+<Button
+    android:id="@+id/btWriteToServer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Confirm" />
+
+ <ImageView
+        android:id="@+id/finalImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/tvTalkMessage"
+        />
+
+ <TextView
+     android:id="@+id/tvTalkMessage"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="#ffffff"
+     android:ems="15"
+     android:text="TextView"
+     android:textColor="#000000" />
+
+</LinearLayout>
+<!-- From: file:/C:/Android/Surveyor/app/src/main/res/layout/talk_main.xml -->

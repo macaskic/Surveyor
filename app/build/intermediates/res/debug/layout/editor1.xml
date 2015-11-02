@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/building" 
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvEditSentParams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:text="Sent Parameters" />
+
+<!--  -->
+     
+    
+    <TextView
+        android:id="@+id/tvEditEstCostLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/spEditEstimate"
+        android:text="Estimated Cost"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvLoginUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvEditSentParams"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvEditLatLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvEditSeverityLabel"
+        android:layout_below="@+id/tvLoginUsername"
+        android:text="lat-long"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvEditSeverityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvEditLatLong"
+        android:text="Severity"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spEditSeverity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEditSeverityLabel"
+        android:layout_toRightOf="@+id/tvEditEstCostLabel" />
+
+    <Button
+        android:id="@+id/btConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="57dp"
+        android:text="Not used" />
+
+    <Button
+        android:id="@+id/bEditGetLatestVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btConfirm"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:text="Get Latest Version" />
+
+    <Spinner
+        android:id="@+id/spEditEstimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spEditSeverity"
+        android:layout_toRightOf="@+id/tvEditEstCostLabel" />
+
+    <Button
+        android:id="@+id/btTalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bEditGetLatestVersion"
+        android:layout_alignBottom="@+id/bEditGetLatestVersion"
+        android:layout_alignParentRight="true"
+        android:text="Talk to Me" />
+
+    <RadioButton
+        android:id="@+id/rbManadatory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvEditSeverityLabel"
+        android:text="Manadatory" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Android/Surveyor/app/src/main/res/layout/editor1.xml -->
